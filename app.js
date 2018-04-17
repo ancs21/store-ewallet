@@ -19,7 +19,8 @@ app.use(morgan('dev'));
 app.use('/uploads', express.static('uploads'));
 app.use(
   bodyParser.urlencoded({
-    extended: false
+    extended: true,
+    limit:'50mb'
   })
 );
 app.use(bodyParser.json());
