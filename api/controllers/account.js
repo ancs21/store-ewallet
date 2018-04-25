@@ -36,7 +36,7 @@ exports.deposit_account = (req, res, next) => {
             historyDeposit: deposit
           },
           $set: {
-            balanced: doc.balanced + parseFloat(deposit.numberDeposit)
+            balanced: doc.balanced + parseInt(deposit.numberDeposit)
           }
         }
       )
