@@ -56,8 +56,6 @@ exports.user_signup = (req, res, next) => {
                   error: err
                 });
               });
-            //save to account
-            account.save();
           }
         });
       }
